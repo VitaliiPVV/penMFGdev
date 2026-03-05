@@ -1,0 +1,55 @@
+import { ServiceGroup } from './page';
+
+export const services: ServiceGroup[] = [
+  {
+    id: 'certified-welding',
+    label: 'Certified Welding',
+    imagePath: '/images/services_certified_welding.webp',
+    options: [
+      { id: '01', label: 'GTAW' },
+      { id: '02', label: 'GMAW' },
+      { id: '03', label: 'GMAW Spray' },
+      { id: '04', label: 'FCAW' },
+      { id: '05', label: 'SMAW' },
+      { id: '06', label: 'TIG' },
+      { id: '07', label: 'MIG' },
+      { id: '08', label: 'Stainless Steel' },
+      { id: '09', label: 'Sanitary Grade' },
+      { id: '10', label: 'AWS' },
+      { id: '11', label: 'NADCAP' },
+      { id: '12', label: 'Los Angeles City Certified' },
+    ],
+  },
+  {
+    id: 'sheet-metal',
+    label: 'Sheet Metal',
+    imagePath: '/images/services_sheet_metal.webp',
+    options: [
+      { id: '01', label: 'Laser' },
+      { id: '02', label: 'Punch' },
+      { id: '03', label: 'Shear' },
+      { id: '04', label: 'Press Brakes', details: '(10 ft, 100 ton)' },
+      { id: '05', label: 'Press Brakes', details: '(14 ft, 200 ton)' },
+      { id: '06', label: 'Press Brakes', details: '(8 ft, 60 ton)' },
+    ],
+  },
+  {
+    id: 'finishing-assembling',
+    label: 'Finishing/Assembling',
+    imagePath: '/images/services_finishing_assembling.webp',
+    options: [
+      { id: '01', label: 'Deburr' },
+      { id: '02', label: 'Jitterbug' },
+      { id: '03', label: 'Belt Sander' },
+      { id: '04', label: 'Passivate in House' },
+      { id: '05', label: 'Timesaver' },
+      { id: '06', label: 'Bead Blast' },
+      { id: '07', label: 'Grinding' },
+      { id: '08', label: 'Disk Sand' },
+      { id: '09', label: 'Polish-#4' },
+      { id: '10', label: 'Polish-2B' },
+      { id: '11', label: 'Line Grain' },
+      { id: '12', label: 'Polish-FG' },
+    ],
+  },
+];

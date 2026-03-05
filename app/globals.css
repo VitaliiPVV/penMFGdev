@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --blue: #2738A6;
+}
+
+@theme inline {
+  /* Custom breakpoints */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-2xl: 1440px;
+
+  /* Custom spacing variables */
+  --spacing-2xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 36px;
+  --spacing-4xl: 48px;
+  --spacing-5xl: 64px;
+  --spacing-x-mobile: 16px;
+  --spacing-x-tablet: 44px;
+  --spacing-x-desktop: 120px;
+
+  /* Container variables */
+  --container-c-4xl: 56rem;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Brand colors (Blue) */
+  --color-brand-primary: var(--blue);
+  --color-brand-elevated: #DDE7FC;
+  --color-brand-subtle: #F0F5FE;
+  --color-brand-pressed: #253483;
+
+  /* Text neutral (gray) */
+  --color-neutral: #232529;
+  --color-neutral-400: #7E8892;
+  --color-dark-blue-300: #7C8893;
+  --color-muted: #555B66;
+  --color-inverse-subtle: #F5F6F6;
+  --color-eleveted: #E4E6E9;
+  --color-destructive: #DB3232;
+  --color-neutral-strong: #A9B1B7;
+  --color-neutral-disabled: #A9B1B7;
+
+  /* Form colors */
+  --color-form-red: #DC2626;
+  --color-form-light-gray: #E4E4E7;
+  --color-form-gray: #ECEDEF;
+  --color-form-dark-gray: #5F6873;
+  --color-form-dark: #10273B;
+  
+  --color-black: #1C1B1F;
+}
+
+@layer base {
+  * {
+    @apply outline-[var(--blue)];
+    @apply ring-[var(--blue)];
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}

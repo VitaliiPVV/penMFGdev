@@ -1,0 +1,19 @@
+.blog-post-content h3 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+  font-weight: 700;
+  color: var(--color-neutral)
+}
+
+.blog-post-content p:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 1280px) {
+  .blog-post-content h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 4rem;
+  }
+}
